@@ -19,7 +19,7 @@ that you want the data to be placed.
 
 data = Dirdata.Generate('C:\\Users\\User\\Desktop\\New folder', x_json)
 
->> data.insert() --> this method will insert the data x_json in the database and it will return the data id 
+>> data.insert() --> Calling this method will insert the data x_json in the database and it will return the data id 
 
 >> print(data.insert()) --> will insert the data in database and print its id
 
