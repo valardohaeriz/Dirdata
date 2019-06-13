@@ -4,7 +4,7 @@ Dirdata is a lightweight and efficient simple database inside windows system usi
 Dirdata is a simple database for windows users, for storing json in json files in the directory you choose.
 it can support up to (10^33) one Decillion JSON data.
 
-I compare it with mysql, this is the result :
+When I made a comparison of speed with mysql, this is the result:
 
 important: i am using lenovo x250 core i5 5 generation 8 gb Ram,
 and using pycharm for collecting this data  .
