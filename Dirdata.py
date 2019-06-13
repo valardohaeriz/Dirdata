@@ -2,7 +2,7 @@ import os
 import json
 
 """
-Dirdata: is a lightweight and efficient database inside windows system using directory method to 
+Dirdata: is a lightweight and efficient simple database inside windows system using directory method to 
 find data that can store up to (10^33) Decillion JSON data.
 
 ==========================inserting data in database=======
