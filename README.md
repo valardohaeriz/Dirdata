@@ -35,5 +35,30 @@ Memory (After): [14.60546875] MB
 The cool thing about Dirdata is the numbers in (Dirdata minimum, Dirdata maximum) will still be the same even if you are looking through a trillions of json.
 
 I just started learning programming four months ago and i thought it would be fun to make something like this, and share it with the community.
+How to use:
+_inserting data in database:
+
+x_json = {"hello world!": {
+         "something": "on",
+         "window": {
+            "name": "main_window",
+            "width": 500,
+            "height": 500
+         }}}
+example: C:\\Users\\User\\Desktop\\New folder --> Change this directory into the folder in your computer
+that you want the data to be placed.
+data = Dirdata.Generate('C:\\Users\\User\\Desktop\\New folder', x_json)
+>> data.insert() --> Calling this method will insert the data x_json in the database and it will return the data id 
+>> print(data.insert()) --> will insert the data in database and print its id
+
+_finding & deleting:
+
+data = Dirdata.Find('C:\\Users\\User\\Desktop\\New folder', '1:1:1:1:1:1:1:1:1:1:666')
+ '1:1:1:1:1:1:1:1:1:1:666' --> is the data unique id.
+>> data.loads --> Calling this method will give you the json as a dictionary (same as json.loads(data)).
+>> data.string(2, True) --> Calling this method will give you the json as string.
+   (2, True) ---> (indent=2, sort_keys=True) in the json.dumps method
+   the default value is (indent=2, sort_keys=False).
+>> data.delete() --> Calling this method will delete the json that has the id '1:1:1:1:1:1:1:1:1:1:666'
 
 give me your thoughts guys.
